@@ -1,0 +1,18 @@
+.box {
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.overflow {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
