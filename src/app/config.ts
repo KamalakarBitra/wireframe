@@ -1,3 +1,3 @@
 export const config = {
-    columnsPerRow: 4 
+    columnsPerRow: 4
 }

@@ -1,0 +1,7 @@
+    <div class="row" *ngFor="let defaultrow of defaultdotArr; let i = index" >
+        <div class="dotbox" *ngFor="let defaultcell of defaultdotArr; let j = index" [style.width.%]="getBlockWidth()">
+            <app-block [getBlock]="getblock(i,j)" (eventOutput)="getOutput($event)"></app-block>
+        </div>
+    </div>
+<!-- <div *ngIf="blocks.length > 0"> -->
+<!-- </div> -->

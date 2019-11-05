@@ -1,20 +1,2 @@
-<div class="row" *ngFor="let row of blocks; let i = index">
-    <ng-container *ngFor="let block of row; let j = index">
-        <div class="box main-box" id="box-{{i}}-{{j}}" [style.width.%]="getBlockWidth()" [style.height.px]="300"
-            [style.visibility]="!block.hide ? 'visible' : 'hidden'"
-            (click)="event_handler('click', block)"
-            (mouseover)="event_handler('mouseover', block)"
-            >
-            <p class="overflow">{{block.name}}</p>
-            <img [src]="getMethod(block)" *ngIf="block.type === 'image'">
-            <ng-container *ngIf="block.type === 'fields'">
-                <ng-container *ngFor="let field of block.fields">
-                    <div *ngIf="field.type==='text'">
-                        <label>{{field.label}}</label>
-                        <input type="text" [placeholder]="field.placeholder">
-                    </div>
-                </ng-container>
-            </ng-container>
-        </div>
-    </ng-container>
-</div>
+<app-acecomponents [getBlock]="block"></app-acecomponents>
+

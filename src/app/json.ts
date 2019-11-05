@@ -4,128 +4,157 @@ export const blocksData = [
             name: 'Block 1',
             loadfunction: 'simpleimgload',
             hide: 0,
-            events: "click",
-            type: 'image'
+            type: ['image'],
+            action : {
+                x: 1,
+                y: 0,
+                func_name: 'submitForm',
+                param: {
+                  x: 0,
+                  y: 2,
+                  func_name: 'eventHandlertable',
+                  param: {}
+                }
+              }         
         },
         {
             name: 'Block 2',
-            loadfunction: 'simplefield',
-            fields: [
-                {
-                    type: 'text',
-                    placeholder: 'Something here',
-                    label: 'First Input'
-                }
-            ],
+            loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'fields'
+            type: ['image']
         },
         {
             name: 'Block 3',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['form'],
+            action : {  
+                x: 0,
+                y: 2,
+                func_name: 'submitForm',
+                param: {
+                  x: 1,
+                  y: 3,
+                  func_name: 'eventHandlertable',
+                  param: {}
+                }
+              }     
+        },
+        {
+            name: 'Block 4 ',
+            loadfunction: 'simpleimgload',
+            hide: 0,
+            events: "click",
+            type: ['image', 'form']
+            
+        }
+
+    ],
+    [
+        {
+            name: 'Block 1',
+            loadfunction: 'simpleimgload',
+            hide: 0,
+            events: "click",
+            type: ['image']
             
         },
         {
-            name: 'Block 4',
+            name: 'Block 2',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
+        },
+        {
+            name: 'Block 3',
+            loadfunction: 'simpleimgload',
+            hide: 0,
+            events: "click",
+            type: ['image']
+            
+        },
+        {
+            name: 'Block 4 ',
+            loadfunction: 'simpleimgload',
+            hide: 0,
+            events: "click",
+            type: ['image']
             
         }
+
     ],
     [
         {
-            name: 'Block 5',
+            name: 'Block 1',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         },
         {
-            name: 'Block 6',
+            name: 'Block 2',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         },
         {
-            name: 'Block 7',
+            name: 'Block 3',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         },
         {
-            name: 'Block 8',
+            name: 'Block 4 ',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         }
+
     ],
     [
         {
-            name: 'Block 9',
+            name: 'Block 1',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         },
         {
-            name: 'Block 10',
+            name: 'Block 2',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         },
         {
-            name: 'Block 11',
+            name: 'Block 3',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         },
         {
-            name: 'Block 12',
+            name: 'Block 4 ',
             loadfunction: 'simpleimgload',
             hide: 0,
             events: "click",
-            type: 'image'
+            type: ['image']
+            
         }
-    ],
-    [
-        {
-            name: 'Block 13',
-            loadfunction: 'simpleimgload',
-            hide: 0,
-            events: "click",
-            type: 'image'
-        },
-        {
-            name: 'Block 14',
-            loadfunction: 'simpleimgload',
-            hide: 0,
-            events: "click",
-            type: 'image'
-        },
-        {
-            name: 'Block 15',
-            loadfunction: 'simpleimgload',
-            hide: 0,
-            events: "click",
-            type: 'image'
-        },
-        {
-            name: 'Block 16',
-            loadfunction: 'simpleimgload',
-            hide: 0,
-            events: "click",
-            type: 'image'
-        }
+
     ]
 ]

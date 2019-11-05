@@ -1,0 +1,12 @@
+<ng-container *ngFor="let type of block[2]['type']">
+    <ng-container *ngIf="type.toLowerCase() === 'image'">
+        <app-image [i]="block[0]" [j]="block[1]" [objectt]="block[2]['action']"></app-image>
+    </ng-container>
+    <ng-container *ngIf="type.toLowerCase() === 'form'">
+        <app-form [i]="block[0]" [j]="block[1]"></app-form>
+    </ng-container>
+    <ng-container *ngIf="type.toLowerCase() === 'table'">
+        <app-table  [i]="block[0]" [j]="block[1]"></app-table>
+    </ng-container>
+</ng-container>
+

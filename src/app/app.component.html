@@ -1,10 +1,1 @@
-<div *ngIf="blocks.length === 0">
-    <div class="row" *ngFor="let defaultrow of defaultdotArr">
-        <div class="dotbox" *ngFor="let defaultcell of defaultdotArr" [style.width.%]="getBlockWidth()" [style.height.px]="300">
-            
-        </div>
-    </div>
-</div>
-<div *ngIf="blocks.length > 0">
-    <app-block [getBlock]="blocks" (eventOutput)="getOutput($event)"></app-block>
-</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<p>form works!</p>
+
+<div *ngIf="showForm">
+    Login:<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    password:<br>
+    <input type="text" name="lastname" value="">
+    <br><br>
+    <input type="submit" value="Submit" [id]="getId()" (click)="eventHandlertable('block_name')">
+</div> 
+<p>{{formMsg}}</p>
+
+  
